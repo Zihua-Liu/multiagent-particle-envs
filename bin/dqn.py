@@ -35,7 +35,7 @@ if __name__ == '__main__':
                   e_greedy_increment=0.0008,)
 
     total_steps = 0
-    for i_episode in range(30):
+    for i_episode in range(100):
 
         # 获取回合 i_episode 第一个 observation
         observation = env.reset()

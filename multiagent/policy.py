@@ -27,6 +27,7 @@ class RandomPolicy(Policy):
             u[index] += 1.0
         return np.concatenate([u, np.zeros(self.env.world.dim_c)])
 
+# human knowledge policy for simple scenario
 class HumanKnowledgePolicy(Policy):
     def __init__(self, env, agent_index):
         super(HumanKnowledgePolicy, self).__init__()
